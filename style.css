@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #222;
+}
+
+header {
+    background: #167d62;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: #d9f5e8;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+button {
+    background: #167d62;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #105b48;
+}
+
+.dashboard,
+.activities {
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.card p {
+    font-size: 30px;
+    color: #167d62;
+    margin: 15px;
+}
+
+.activities p,
+.activities ul {
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.activities ul {
+    list-style-position: inside;
+}
+
+footer {
+    background: #167d62;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
